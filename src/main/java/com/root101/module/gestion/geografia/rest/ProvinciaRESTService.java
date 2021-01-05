@@ -29,11 +29,11 @@ import com.root101.module.gestion.geografia.core.usecase_def.ProvinciaUseCase;
  */
 @RestController
 @RequestMapping(value = PROVINCIA_GENERAL_PATH)
-public class ProyectoRESTService extends RESTServiceTemplate<ProvinciaDomain> implements ProvinciaUseCase {
+public class ProvinciaRESTService extends RESTServiceTemplate<ProvinciaDomain> implements ProvinciaUseCase {
 
     private final ProvinciaUseCase provinciaUC = A_ModuleGestionGeografiaRESTConfig.provinciaUC;
 
-    public ProyectoRESTService() {
+    public ProvinciaRESTService() {
         setUseCase(provinciaUC);
     }
 
