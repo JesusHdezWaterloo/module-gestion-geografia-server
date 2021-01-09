@@ -14,7 +14,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.root101.module.gestion.geografia.repo.entities;
 
 import com.root101.module.gestion.geografia.repo.utils.ResourcesGeografia;
@@ -56,19 +55,19 @@ public class Municipio implements Serializable {
     @Basic(optional = false)
     @Column(name = "id_municipio", nullable = false)
     private Integer idMunicipio;
-    
+
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
     @Column(name = "nombre_municipio", nullable = false, length = 100)
     private String nombreMunicipio;
-    
+
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 500)
     @Column(name = "descripcion", nullable = false, length = 500)
     private String descripcion;
-    
+
     @JoinColumn(name = "provincia_fk", referencedColumnName = "id_provincia", nullable = false)
     @ManyToOne(optional = false)
     private Provincia provinciaFk;

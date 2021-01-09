@@ -16,8 +16,8 @@
  */
 package com.root101.module.gestion.geografia.rest;
 
+import com.root101.spring.server.RESTServiceTemplate;
 import static com.root101.module.gestion.geografia.rest.ModuleGestionGeografiaRESTConstants.*;
-import com.jhw.utils.spring.server.*;
 import com.root101.module.gestion.geografia.core.domain.ProvinciaDomain;
 import org.springframework.web.bind.annotation.*;
 import com.root101.module.gestion.geografia.core.usecase_def.ProvinciaUseCase;

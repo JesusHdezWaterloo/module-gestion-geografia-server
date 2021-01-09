@@ -16,7 +16,7 @@
  */
 package com.root101.module.gestion.geografia.repo.utils;
 
-import com.jhw.module.util.mysql.services.MySQLHandler;
+import com.root101.module.util.mysql.services.MySQLHandler;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
@@ -28,7 +28,7 @@ import javax.persistence.Persistence;
 public class ResourcesGeografia {
 
     public static final String SCHEMA = "root101_sigecon_geografia";
-            
+
     public static EntityManagerFactory EMF;
 
     public static void initEMF() {
