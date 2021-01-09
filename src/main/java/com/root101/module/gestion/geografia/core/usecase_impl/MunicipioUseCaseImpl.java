@@ -34,5 +34,5 @@ public class MunicipioUseCaseImpl extends DefaultCRUDUseCase<MunicipioDomain> im
     public MunicipioUseCaseImpl() {
         super.setRepo(repo);
     }
-    
+
 }

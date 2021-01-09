@@ -14,7 +14,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.root101.module.gestion.geografia.repo.entities;
 
 import com.root101.module.gestion.geografia.repo.utils.ResourcesGeografia;
@@ -49,25 +48,25 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Provincia implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "id_provincia", nullable = false)
     private Integer idProvincia;
-    
+
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
     @Column(name = "nombre_provincia", nullable = false, length = 100)
     private String nombreProvincia;
-    
+
     @Basic(optional = false)
     @NotNull
     @Size(max = 500)
     @Column(name = "descripcion", nullable = false, length = 500)
     private String descripcion;
-    
+
     public Provincia() {
     }
 

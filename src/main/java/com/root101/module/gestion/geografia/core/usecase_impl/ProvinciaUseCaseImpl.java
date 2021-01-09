@@ -34,5 +34,5 @@ public class ProvinciaUseCaseImpl extends DefaultCRUDUseCase<ProvinciaDomain> im
     public ProvinciaUseCaseImpl() {
         super.setRepo(repo);
     }
-    
+
 }
